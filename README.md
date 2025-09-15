@@ -33,7 +33,7 @@ The following files are included:
   OSM extract clipped specifically to Legazpi City using the `.poly` boundary.  
   Optimized for city-level routing.
 
----
+
 
 ## Usage
 
@@ -43,21 +43,21 @@ These files can be used for:
 - **Map rendering** – Visualizing the Legazpi area in map applications.  
 - **Geospatial analysis** – Performing spatial queries, network analysis, or urban studies.  
 
----
+
 
 ## Data Sources
 
 - **OpenStreetMap data** downloaded from [Geofabrik: Philippines extract](https://download.geofabrik.de/asia/philippines.html)  
 - **Albay OSM Extract** maintained in: [albay-osm-extract](https://github.com/johannbuere/albay-osm-extract)  
 
----
+
 
 ## Related Project
 
 - [**LAKBAI**](https://github.com/johannbuere/LAKBAI) – The main project that uses these data files.  
   *LAKBAI is an AI-powered tourist navigation and recommendation system designed for Legazpi City, helping visitors explore efficiently while discovering local attractions.*
 
----
+
 
 ## License
 

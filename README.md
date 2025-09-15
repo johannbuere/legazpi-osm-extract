@@ -35,7 +35,7 @@ The following files are included:
 
 
 
-## Usage
+### Usage
 
 These files can be used for:
 
@@ -52,7 +52,7 @@ These files can be used for:
 
 
 
-## Related Project
+### Related Project
 
 - [**LAKBAI**](https://github.com/johannbuere/LAKBAI) – The main project that uses these data files.  
   *LAKBAI is an AI-powered tourist navigation and recommendation system designed for Legazpi City, helping visitors explore efficiently while discovering local attractions.*

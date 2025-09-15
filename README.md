@@ -3,7 +3,7 @@
 This repository provides OpenStreetMap (OSM) data extracts and a polygon boundary file for **Legazpi City, Albay Province, Philippines**.  
 It is primarily prepared for use with **[LAKBAI](https://github.com/johannbuere/LAKBAI)** — *An AI-Powered Tourist Navigation and Recommendation System for Legazpi*.
 
---
+
 
 ### Why this repository exists
 
@@ -15,7 +15,6 @@ To power the OSRM (Open Source Routing Machine) backend, we need both:
 
 This repository serves as the dedicated source of those geospatial files, making it easier to maintain and reuse them across the project.
 
----
 
 ## Contents
 

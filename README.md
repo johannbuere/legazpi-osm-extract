@@ -72,7 +72,7 @@ osmium extract -p legazpi.poly albay.osm.pbf -o legazpi.osm.pbf
 -   `-o legazpi.osm.pbf` → output file containing only Legazppi City
 
 Result:
-- `legazpi.osm.pbf` (1.2 MB) with only Lgeazpi's OSM data
+- `legazpi.osm.pbf` (1.2 MB) with only Legazpi's OSM data
 
 
 ## Step 4: Verify the extract

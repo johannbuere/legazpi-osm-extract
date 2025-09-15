@@ -34,6 +34,65 @@ The following files are included:
   Optimized for city-level routing.
 
 
+## Regenerating the Legazpi Extract
+
+### Make sure to have the osmium-tool installed
+If on Windows, make sure to have wsl installed
+
+``` bash
+wsl --install
+```
+
+Install osmium-tool
+``` bash
+sudo apt update
+sudo apt install osmium-tool
+```
+
+### Step 1: Download the source dataset
+
+Get the latest Philippines OSM extract from Geofabrik:
+
+``` bash
+wget https://download.geofabrik.de/asia/philippines-latest.osm.pbf
+```
+
+### Step 2: Ensure you have everything in the same directory
+
+Place `legazpi.poly`, 'alba (included in this repo) in the same directory.
+
+
+### Step 3: Extract Legazpi data using the boundary file
+
+With the Albay dataset (`Albay.osm.pbf`) and the
+`legazpi.poly` boundary file, run:
+
+``` bash
+osmium extract -p Albay.poly philippines-latest.osm.pbf -o albay-latest.osm.pbf
+```
+
+-   `-p legazpi.poly` → specifies the polygon boundary for Legazpi
+-   `albay.osm.pbf` → the source dataset
+-   `-o legazpi.osm.pbf` → output file containing only Legazppi City
+
+Result:
+- `legazpi.osm.pbf` (1.2 MB) with only Lgeazpi's OSM data
+
+
+## Step 4: Verify the extract
+
+Check the metadata of the new file:
+
+``` bash
+osmium fileinfo legazpi.osm.pbf
+```
+
+Look for:
+- `Bounding box` → should match Legazpi's approximate lat/lon range
+- `Size` → much smaller than the Albay extract and full Philippines extract
+
+-----------------------------------------------------------------------
+
 ### Usage
 
 These files can be used for:
@@ -51,6 +110,7 @@ These files can be used for:
 
 
 
+
 ### Related Project
 
 - [**LAKBAI**](https://github.com/johannbuere/LAKBAI) – The main project that uses these data files.  
@@ -65,6 +125,3 @@ These files can be used for:
 
 - **Polygon and derived extracts**: Same license as OSM data (ODbL).  
   Attribution is required if used in other projects.  
-
-- **This repository**: Licensed under the MIT License for the repository structure and documentation.  
-  Data files remain under ODbL as noted above.

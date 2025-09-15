@@ -51,24 +51,20 @@ sudo apt install osmium-tool
 
 ### Step 1: Download the source dataset
 
-Get the latest Philippines OSM extract from Geofabrik:
+Get the latest Albay OSM extract `albay.osm.pbf` from [**albay-osm-extract**](https://github.com/johannbuere/albay-osm-extract):
 
-``` bash
-wget https://download.geofabrik.de/asia/philippines-latest.osm.pbf
-```
 
 ### Step 2: Ensure you have everything in the same directory
 
-Place `legazpi.poly`, 'alba (included in this repo) in the same directory.
+Place `legazpi.poly`, (included in this repo) in the same directory.
 
 
 ### Step 3: Extract Legazpi data using the boundary file
 
-With the Albay dataset (`Albay.osm.pbf`) and the
-`legazpi.poly` boundary file, run:
+With the Albay dataset (`albay.osm.pbf`) and the `legazpi.poly` boundary file, run:
 
 ``` bash
-osmium extract -p Albay.poly philippines-latest.osm.pbf -o albay-latest.osm.pbf
+osmium extract -p legazpi.poly albay.osm.pbf -o legazpi.osm.pbf
 ```
 
 -   `-p legazpi.poly` → specifies the polygon boundary for Legazpi
@@ -99,7 +95,7 @@ These files can be used for:
 
 - **OSRM (Open Source Routing Machine)** – Building a routing engine tailored to Legazpi City.  
 - **Map rendering** – Visualizing the Legazpi area in map applications.  
-- **Geospatial analysis** – Performing spatial queries, network analysis, or urban studies.  
+- **Geospatial analysis (QGIS)** – Performing spatial queries, network analysis, or urban studies.  
 
 
 
